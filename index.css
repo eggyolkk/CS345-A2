@@ -8,10 +8,21 @@ html, body {
     padding: 0;
 }
 
+#section-1{
+    height:450px;
+    overflow: hidden;
+}
+
+#nav-div{
+    width: 60%;
+    margin: auto;
+    padding: auto;
+}
+
 #nav {
+      text-align: center;
       list-style-type: none;
-      margin-top: -45%;
-      width: 60%;
+      margin-top: 2%;
       overflow: hidden;
       position: absolute;
 }
@@ -42,39 +53,58 @@ li a:active {
 
 #book-club-image {
     width: 100%;
+
+}
+
+#h1-div {
+    width: 100%;
+    height: 200px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 
 h1 {
-    padding-left: 40%;
     margin-top: -35%;
     font-size: 200px;
     font-family: 'Domine', serif;
     font-weight: 700;
     color: #fff;
+    text-align: center;
+    padding-bottom: 1px;
 }
 
 h2 {
-    padding-left: 40%;
-    margin-top: -8%;
+    margin-top: -100px;
     font-size: 30px;
     font-family: 'Domine', serif;
     font-weight: 700;
     color: #fff;
+    text-align: center;
+}
+
+h3 {
+    font-size: 30px;
+    font-family: 'Domine', serif;
+    font-weight: 700;
+    text-align: center;
+    float: right;
+    padding-right: 20%;
+    padding-top: 10%;
+}
+
+#bpd-para-div{
+    width: 65%;
+    margin: auto;
+    padding: auto;
 }
 
 #bpd-description{
     color: #fff;
     font-family: 'Domine', serif;
     font-weight: 400;
-    margin-top: 5%;
-    padding-left: 33%;
-    width: 700px;
+    margin-top: 15%;
     text-align: center;
-}
-
-.buttons{
-
 }
 
 .button {
@@ -104,29 +134,94 @@ h2 {
     color: #5E2129;
 }
 
-
 #sign-in-button{
     color: #ffffff;
 }
 
+#book-of-the-week{
+    width: 100%;
+    height: 80%;
+}
+
+#book-cover {
+    width: 20%;
+    padding-top: 5%;
+    padding-bottom: 5%;
+    padding-left: 15%;
+    overflow: hidden;
+}
+
+#get-involved-photo-div {
+    width: 100%;
+}
+
+#get-involved-pic {
+    width: 100%;
+}
+
 @media only screen and (min-width: 960px) {
-    #nav {
-      margin-left: 30%;
+
+    li {
+        font-size: 13px;
     }
 
     li a {
-      padding: 30px 50px;
+      padding: 30px 20px;
+    }
+
+    h1{
+
+        font-size: 130px;
+    }
+
+    h2 {
+        font-size: 20px;
+    }
+
+    #bpd-description{
+        font-size: 13px;
+    }
+
+    .button {
+        padding: 15px 30px 15px 30px;
+        margin-top: 1%;
+        margin-left: 30px;
+    }
+
+    #register-button{
+        margin-left:-30px;
+    }
+
+}
+
+
+@media only screen and (min-width: 1050px) {
+    section-1 {
+        height:600px;
+    }
+
+    h1{
+        font-size: 130px;
+    }
+
+    .button {
+        padding: 15px 30px 15px 30px;
+        margin-top: 1%;
+        margin-left: 20px;
+    }
+
+    #register-button{
+        margin-left:-50px;
     }
 }
 
-@media only screen and (min-width: 1140px) {
-  #nav {
-      margin-left: 30%;
-    }
-}
+@media only screen and (min-width: 1200px) {
+  #section-1 {
+    height:500px;
+  }
 
-@media only screen and (min-width: 1350px) {
-  #nav {
-      margin-left: 23%;
-    }
+  li a {
+      padding: 30px 30px;
+  }
+
 }
