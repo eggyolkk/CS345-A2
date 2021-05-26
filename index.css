@@ -6,6 +6,7 @@ html, body {
     background-color: #fff;
     margin: 0;
     padding: 0;
+    scroll-behavior: smooth;
 }
 
 #section-1{
@@ -13,8 +14,13 @@ html, body {
     overflow: hidden;
 }
 
-#nav-div{
-    width: 60%;
+#logo {
+    margin: 0% 2% -1% 7%;
+    width: 4%;
+}
+
+#nav-div {
+    width: 100%;
     margin: auto;
     padding: auto;
 }
@@ -28,19 +34,19 @@ html, body {
 }
 
 li {
-      float: center;
-      font-family: 'Domine', serif;
-      font-weight: 400;
-      font-size: 15px;
-      display:inline-block;
+    float: center;
+    font-family: 'Domine', serif;
+    font-weight: 400;
+    font-size: 15px;
+    display:inline-block;
 }
 
 li a {
-      display: block;
-      color: #fff;
-      text-align: center;
-      padding: 30px 30px;
-      text-decoration: none;
+    display: block;
+    color: #fff;
+    text-align: center;
+    padding: 30px 30px;
+    text-decoration: none;
 }
 
 li a:hover {
@@ -53,7 +59,6 @@ li a:active {
 
 #book-club-image {
     width: 100%;
-
 }
 
 #h1-div {
@@ -63,24 +68,23 @@ li a:active {
     margin-right: auto;
 }
 
-
 h1 {
-    margin-top: -35%;
     font-size: 700%;
     font-family: 'Domine', serif;
     font-weight: 700;
     color: #fff;
     text-align: center;
     padding-bottom: 1px;
+    margin-top: -35%;
 }
 
 h2 {
-    margin-top: -100px;
     font-size: 150%;
     font-family: 'Domine', serif;
     font-weight: 700;
     color: #fff;
     text-align: center;
+    margin-top: -100px;
 }
 
 h3 {
@@ -120,8 +124,7 @@ p{
 	transition: all 0.4s ease 0s;
 	font-family: 'Domine', serif;
     font-weight: 700;
-    margin-top: 3%;
-    margin-left: 40px;
+    margin: 3% 0% 0% 50px;
     padding: 20px 50px 20px 50px;
 }
 
@@ -137,6 +140,13 @@ p{
     color: #5E2129;
 }
 
+#register-button:hover {
+    color: #ffffff;
+    background: #5E2129;
+    border-color: #5E2129; !important;
+	transition: all 0.4s ease 0s;
+}
+
 #sign-in-button{
     color: #ffffff;
 }
@@ -144,14 +154,11 @@ p{
 #book-of-the-week{
     width: 100%;
     height: 100%;
-    /*background-color: #fafafa;*/
 }
 
 #book-cover {
     width: 20%;
-    padding-top: 10%;
-    padding-bottom: 15%;
-    padding-left: 15%;
+    padding: 10% 0% 15% 15%;
     overflow: hidden;
 }
 
@@ -159,11 +166,10 @@ p{
     width: 50%;
     margin: 10% 7% 10% 0%;
     float: right;
-    /*background-color: #ebebeb;*/
 }
 
 #book-of-the-week-title{
-    font-size: 23px;
+    font-size: 20px;
     margin: auto;
     padding-top: 3%;
     color: #8a8a8a;
@@ -172,6 +178,7 @@ p{
 
 #book-title {
     margin: auto;
+    font-size: 40px;
 }
 
 #book-description {
@@ -218,13 +225,15 @@ p{
 
 #contact-photo-div {
     width: 100%;
+    overflow: hidden;
+    padding-bottom: 8%;
 }
 
 #contact-pic {
     width: 100%;
 }
 
-#contact-title{
+#contact-title {
     margin: auto;
     margin-top: -30%;
     color: #ffffff;
@@ -240,7 +249,7 @@ p{
     text-align: center;
 }
 
-#contact-button-div{
+#contact-button-div {
     width: 55%;
     margin: auto;
     margin-top: 3%;
@@ -252,6 +261,79 @@ p{
     color: #ffffff;
     width: 100%;
 }
+
+footer {
+    width: 100%;
+    height: 300%;
+    background-color: #1f1f1f;
+}
+
+#footer-ul {
+    margin-top: 0;
+    text-align: center;
+    padding-bottom: -5%;
+}
+
+.footer-tag {
+    color: #ffffff;
+}
+
+.footer-tag a {
+    color: #ffffff;
+}
+
+#social-media-div {
+    width: 100%;
+    margin: auto;
+    padding-top: 5%;
+    text-align: center;
+}
+
+.fa {
+    padding: 20px;
+    font-size: 30px;
+    width: 20px;
+    text-align: center;
+    text-decoration: none;
+    margin: 5px 2px;
+    border-radius: 50%;
+}
+
+.fa:hover {
+    background: #5E2129;
+    color: white;
+    transition: all 0.4s ease 0s;
+}
+
+.fa-facebook {
+    background: white;
+    color: #5E2129;
+}
+
+.fa-twitter {
+    background: white;
+    color: #5E2129;
+}
+
+.fa-google {
+    background: white;
+    color: #5E2129;
+}
+
+.fa-instagram {
+    background: white;
+    color: #5E2129;
+}
+
+#footer-p {
+    color: white;
+    text-align: center;
+    padding-bottom: 5%;
+    font-size: 13px;
+    width: 60%;
+    margin: auto;
+}
+
 
 @media only screen and (min-width: 900px) {
     #nav {
@@ -293,6 +375,10 @@ p{
         height:480px;
     }
 
+    #bpd-description{
+        font-size: 15px;
+    }
+
     #nav {
         margin-left: -3%;
     }
@@ -310,6 +396,10 @@ p{
     #register-button{
         margin-left:-50px;
     }
+
+    #book-text-div {
+        margin: 12% 7% 10% 0%;
+    }
 }
 
 @media only screen and (min-width: 1200px) {
@@ -318,24 +408,50 @@ p{
     }
 
     #nav {
-        margin-left: 3%;
+        margin-left: 1%;
     }
 
     li {
         font-size: 15px;
     }
 
+    #buttons {
+        padding-left: 20%;
+    }
+
     #bpd-description{
         font-size: 17px;
+    }
+
+    #book-of-the-week-title {
+        font-size: 25px;
+    }
+
+    #book-title {
+        font-size: 50px;
     }
 
     #book-description {
         font-size: 18px;
     }
 
+    #contact-title {
+        font-size: 50px;
+    }
+
+    #contact-description {
+        font-size: 15px;
+    }
+
+}
+
 @media only screen and (min-width: 1500px) {
     #section-1 {
         height:600px;
+    }
+
+    #logo {
+        margin-left: 15%;
     }
 
     #nav {
@@ -358,11 +474,39 @@ p{
     #bpd-description{
         margin-top: 22%;
     }
+
+    #book-text-div {
+        margin: 12% 7% 10% 0%;
+    }
+
+    #book-of-the-week-title {
+        font-size: 30px;
+    }
+
+    #book-title {
+        font-size: 60px;
+    }
+
+    #book-description {
+        font-size: 20px;
+    }
+
+    #contact-title {
+        font-size: 60px;
+    }
+
+    #contact-description {
+        font-size: 17px;
+    }
 }
 
 @media only screen and (min-width: 1700px) {
     #section-1 {
         height:700px;
+    }
+
+    #logo {
+        margin-left: 20%;
     }
 
     #nav {
@@ -382,6 +526,10 @@ p{
         margin-top: -200px;
     }
 
+    #book-text-div{
+        margin: 13% 7% 10% 0%;
+    }
+
     #bpd-description{
         margin-top: 25%;
     }
@@ -397,4 +545,13 @@ p{
     #book-description {
         font-size: 20px;
     }
+
+    #contact-title {
+        font-size: 75px;
+    }
+
+    #contact-description {
+        font-size: 20px;
+    }
+
 }
