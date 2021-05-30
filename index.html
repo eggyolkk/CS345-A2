@@ -38,7 +38,7 @@
         </div>
 
         <div class="buttons" align="center">
-            <a class="button" id="trigger-modal" href="#">REGISTER</a>
+            <a class="button custom-color" id="trigger-modal" href="#">REGISTER</a>
             <a class="button" id="sign-in-button" href="#" target="_blank" rel="nofollow noopener">SIGN IN</a>
         </div>
     </div>
@@ -54,12 +54,12 @@
                 when he discovers a mysterious book hidden in the stacks.
             </p>
             <div id="book-button-div">
-                <a class="custom-color" id="book-button" href="#" target="_blank" rel="nofollow noopener">LEARN MORE</a>
+                <a class="custom-color custom-border-color" id="book-button" href="#" target="_blank" rel="nofollow noopener">LEARN MORE</a>
             </div>
         </div>
     </div>
 
-    <div id="contact-photo-div">
+    <div id="contact-div">
         <img id="contact-pic" src="get-involved2.png" alt="People gathering together reading books">
         <h3 id="contact-title">GET IN TOUCH</h3>
         <p id="contact-description">Whether you're a long-time avid reader or someone looking to widen your range of
@@ -72,18 +72,49 @@
     </div>
 
     <div id="myModal" class="modal">
-        <div class="modal-content">
+        <div id="bookclubrego">
             <span class="close">&times;</span>
-            <p>jidkjfs</p>
+            <div class="custom-background-color" id="left-panel">
+                <img src="register-image.jpg" id="register-image" alt="Stack of books">
+                <h1 id="register-h1">REGISTRATION</h1>
+                <h2 id="register-h2">Fill out the form to create an account</h2>
+                <a id="login-option" href="#">Already have an account?</a>
+            </div>
+
+            <form>
+                <div id="userDetails">
+                    <h3 class="register-h3 custom-color">PERSONAL DETAILS</h3>
+                    <input class="form custom-color" type="text" name="given-name" id="given-name" placeholder="GIVEN NAME" required /><br>
+                    <input class="form custom-color" type="text" name="surname" id="surname" placeholder="SURNAME" required /><br>
+                    <input class="form custom-color" type="text" name="username" id="username" placeholder="USERNAME" required /><br>
+                    <input class="form custom-color" type="password" name="password" id="password" placeholder="PASSWORD" required /><br>
+                </div>
+
+                <div id="addresses">
+                    <h3 class="register-h3">ADDRESS</h3>
+                    <input class="form custom-color" type="text" name="home-address" id="home-address" placeholder="HOME ADDRESS" required /><br>
+                    <input class="form custom-color" type="text" name="work-address" id="work-address" placeholder="WORK ADDRESS" required /><br>
+                </div>
+
+                <div id="contacts">
+                    <h3 class="register-h3">CONTACT INFO</h3>
+                    <input class="form custom-color" type="text" name="mobile-number" id="mobile-number" placeholder="MOBILE NUMBER" required /><br>
+                    <input class="form custom-color" type="text" name="email" id="email" placeholder="EMAIL ADDRESS" required /><br>
+                </div>
+            </form>
+
+            <div id="register-button-div">
+                <input class="button custom-background-color" type="submit" value="Register" id="register-form-button">
+            </div>
         </div>
     </div>
 
     <footer>
         <div id="social-media-div">
-            <a href="#" class="fa fa-facebook"></a>
-            <a href="#" class="fa fa-twitter"></a>
-            <a href="#" class="fa fa-google"></a>
-            <a href="#" class="fa fa-instagram"></a>
+            <a href="#" class="fa fa-facebook custom-color"></a>
+            <a href="#" class="fa fa-twitter custom-color"></a>
+            <a href="#" class="fa fa-google custom-color"></a>
+            <a href="#" class="fa fa-instagram custom-color"></a>
         </div>
         <ul id="footer-ul">
             <li class="footer-tag"><a class="active" href="#home">Contact Us</a></li>
@@ -99,6 +130,7 @@
         var modal = document.getElementById("myModal");
         var btn = document.getElementById("trigger-modal");
         var span = document.getElementsByClassName("close")[0];
+        var text = document.getElementsByClassName("form").value;
 
         btn.onclick = function() {
             modal.style.display = "block";
